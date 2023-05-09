@@ -16,4 +16,5 @@
   1.5-Com autoloader configurado, executei composer dump-autoload.
 
 2-Criei uma calculadora de impostos que calcula o imposto sobre um orçamento. Ela recebe o orçamento e devolve o valor desse imposto, e retorna um float. Usei para fazer as contas operadores normais
-  2.1-
+ 
+ 3-Utilizando Padrão Strategy criando uma classe para cada imposto.
