@@ -14,3 +14,6 @@
   1.4-Configurei autoloader, criei o composer.json e defini um autoload, utilizei a psr-4, e o name space é PHP\DesignPattern.
   
   1.5-Com autoloader configurado, executei composer dump-autoload.
+
+2-Criei uma calculadora de impostos que calcula o imposto sobre um orçamento. Ela recebe o orçamento e devolve o valor desse imposto, e retorna um float. Usei para fazer as contas operadores normais
+  2.1-
