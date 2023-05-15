@@ -1,10 +1,10 @@
 <?php
 
-namespace PHP\DesignPattern\Impostos;
+namespace Alura\DesignPattern\Impostos;
 
-use PHP\DesignPattern\Orcamento;
+use Alura\DesignPattern\Orcamento;
 
 interface Imposto
 {
-  public function calculaImposto(Orcamento $orcamento): float;
+    public function calculaImposto(Orcamento $orcamento): float;
 }

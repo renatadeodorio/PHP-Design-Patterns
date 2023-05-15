@@ -6,12 +6,12 @@ use Alura\DesignPattern\Orcamento;
 
 abstract class Desconto
 {
-  protected ?Desconto $proximoDesconto;
+    protected ?Desconto $proximoDesconto;
 
-  public function __construct(?Desconto $proximoDesconto)
-  {
-    $this->proximoDesconto = $proximoDesconto;
-  }
+    public function __construct(?Desconto $proximoDesconto)
+    {
+        $this->proximoDesconto = $proximoDesconto;
+    }
 
-  abstract public function calculaDesconto(Orcamento $orcamento): float;
+    abstract public function calculaDesconto(Orcamento $orcamento): float;
 }

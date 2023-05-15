@@ -1,13 +1,13 @@
 <?php
 
-namespace PHP\DesignPattern\Impostos;
+namespace Alura\DesignPattern\Impostos;
 
-use PHP\DesignPattern\Orcamento;
+use Alura\DesignPattern\Orcamento;
 
 class Iss implements Imposto
 {
-  public function calculaImposto(Orcamento $orcamento): float
-  {
-    return $orcamento->valor * 0.06;
-  }
+    public function calculaImposto(Orcamento $orcamento): float
+    {
+        return $orcamento->valor * 0.06;
+    }
 }

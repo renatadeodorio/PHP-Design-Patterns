@@ -1,16 +1,16 @@
 <?php
 
-use PHP\DesignPattern\CalculadoraDeDescontos;
-use PHP\DesignPattern\CalculadoraDeImpostos;
-use PHP\DesignPattern\Impostos\{Icms, Iss};
-use PHP\DesignPattern\Orcamento;
+use Alura\DesignPattern\CalculadoraDeDescontos;
+use Alura\DesignPattern\CalculadoraDeImpostos;
+use Alura\DesignPattern\Impostos\{Icms, Iss};
+use Alura\DesignPattern\Orcamento;
 
 require 'vendor/autoload.php';
 
 /*$calculadora = new CalculadoraDeImpostos();
 
 $orcamento = new Orcamento();
-$orçamento->valor = 100;
+$orcamento->valor = 100;
 
 echo $calculadora->calcula($orcamento, new Iss());
 */

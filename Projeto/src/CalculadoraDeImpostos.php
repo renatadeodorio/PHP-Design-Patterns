@@ -1,13 +1,13 @@
 <?php
 
-namespace PHP\DesignPattern;
+namespace Alura\DesignPattern;
 
-use PHP\DesignPattern\Impostos\Imposto;
+use Alura\DesignPattern\Impostos\Imposto;
 
-class CalculadoraDeImpostos 
+class CalculadoraDeImpostos
 {
-  public function calcula(Orcamento $orcamento, Imposto $imposto): float 
-  {
-    return $imposto->calculaImposto($orcamento);
-  }
+    public function calcula(Orcamento $orcamento, Imposto $imposto): float
+    {
+        return $imposto->calculaImposto($orcamento);
+    }
 }
