@@ -1,8 +1,8 @@
 <?php
 
-namespace Alura\DesignPattern\Impostos;
+namespace PHP\DesignPattern\Impostos;
 
-use Alura\DesignPattern\Orcamento;
+use PHP\DesignPattern\Orcamento;
 
 class Iss implements Imposto
 {
