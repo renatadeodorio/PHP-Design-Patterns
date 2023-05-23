@@ -4,5 +4,5 @@ namespace PHP\DesignPattern;
 
 interface Command
 {
-  public function execute ();
+    public function execute();
 }

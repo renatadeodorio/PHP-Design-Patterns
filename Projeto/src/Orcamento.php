@@ -3,22 +3,22 @@
 namespace PHP\DesignPattern;
 
 use PHP\DesignPattern\EstadosOrcamento\EmAprovacao;
-use PHP\DesignPattern\EstadosOrcamento\EstadosOrcamento;
+use PHP\DesignPattern\EstadosOrcamento\EstadoOrcamento;
 
 class Orcamento
 {
     public int $quantidadeItens;
     public float $valor;
-    public EstadosOrcamento $estadoAtual;
+    public EstadoOrcamento $estadoAtual;
 
     public function __construct()
     {
-       $this->estadoAtual = new EmAprovacao(); 
+        $this->estadoAtual = new EmAprovacao();
     }
 
     public function aplicaDescontoExtra()
     {
-        $this->valor -= $this->estadoAtual->calculaDescontoExtra($this);    
+        $this->valor -= $this->estadoAtual->calculaDescontoExtra($this);
     }
 
     public function aprova()
@@ -35,5 +35,4 @@ class Orcamento
     {
         $this->estadoAtual->finaliza($this);
     }
-
-}    
+}
