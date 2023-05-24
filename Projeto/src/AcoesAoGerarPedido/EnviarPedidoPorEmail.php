@@ -4,10 +4,10 @@ namespace PHP\DesignPattern\AcoesAoGerarPedido;
 
 use PHP\DesignPattern\Pedido;
 
-class EnviarPedidoPorEmail
+class EnviarPedidoPorEmail implements AcaoAposGerarPedido
 {
-  public function executaAcao(Pedido $pedido): void
-  {
-    echo "Enviando e-mail de pedido gerado"; 
-  }
+    public function executaAcao(Pedido $pedido): void
+    {
+        echo "Enviando e-mail de pedido gerado";
+    }
 }

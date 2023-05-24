@@ -10,4 +10,7 @@ $nomeCliente = $argv[3];
 
 $gerarPedido = new GerarPedido($valorOrcamento, $numeroDeItens, $nomeCliente);
 $gerarPedidoHandler = new GerarPedidoHandler();
+$gerarPedidoHandler->adicionarAcaoAoGerarPedido(new \PHP\DesignPattern\AcoesAoGerarPedido\CriarPedidoNoBanco());
+$gerarPedidoHandler->adicionarAcaoAoGerarPedido(new \PHP\DesignPattern\AcoesAoGerarPedido\EnviarPedidoPorEmail());
+$gerarPedidoHandler->adicionarAcaoAoGerarPedido(new \PHP\DesignPattern\AcoesAoGerarPedido\LogGerarPedido());
 $gerarPedidoHandler->execute($gerarPedido);
