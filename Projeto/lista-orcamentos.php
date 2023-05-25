@@ -20,11 +20,11 @@ $orcamento3->aprova();
 $orcamento3->finaliza();
 $orcamento3->valor = 1350;
 
-$listaOrcamentos = [
-  $orcamento1,
-  $orcamento2,
-  $orcamento3
-];
+$listaOrcamentos = new ListaDeOrcamentos();
+$listaOrcamentos->addOrcamento($orcamento1); 
+$listaOrcamentos->addOrcamento($orcamento2);
+$listaOrcamentos->addOrcamento($orcamento3);
+
 
 foreach ($listaOrcamentos as $orcamento) {
   echo "Valor: " . $orcamento->valor . PHP_EOL;
