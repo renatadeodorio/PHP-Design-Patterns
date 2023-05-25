@@ -2,19 +2,23 @@
 
 namespace PHP\DesignPattern;
 
-class ListaDeOrcamentos
+class ListaDeOrcamentos implements \IteratorAggregate
 {
-  /** @var Orcamento[] */
-  private array $orcamentos;
+    /** @var Orcamento[] */
+    private array $orcamentos;
 
-  public function __construct()
-  {
-    $this->orcamentos = [];
-  }
+    public function __construct()
+    {
+        $this->orcamentos = [];
+    }
 
-  public function addOrcamento(Orcamento $orcamento)
-  {
-    $this->orcamentos[] = $orcamento;
-  }
-  
+    public function addOrcamento(Orcamento $orcamento)
+    {
+        $this->orcamentos[] = $orcamento;
+    }
+
+    public function getIterator()
+    {
+        return new \ArrayIterator($this->orcamentos);
+    }
 }

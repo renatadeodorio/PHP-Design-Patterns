@@ -2,6 +2,7 @@
 
 require_once 'vendor/autoload.php';
 
+use PHP\DesignPattern\ListaDeOrcamentos;
 use PHP\DesignPattern\Orcamento;
 
 $orcamento1 = new Orcamento();
